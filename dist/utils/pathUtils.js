@@ -1,6 +1,6 @@
-import * as path from 'path';
-import * as fs from 'fs/promises';
-import { fileURLToPath } from 'url';
+import * as path from "path";
+import * as fs from "fs/promises";
+import { fileURLToPath } from "url";
 /**
  * Creates a platform-agnostic path from path segments
  * @param segments Path segments to join
@@ -8,12 +8,14 @@ import { fileURLToPath } from 'url';
  */
 export function createPath(...segments) {
     if (segments.length === 0)
-        return '';
+        return "";
     let result = segments[0];
     for (let i = 1; i < segments.length; i++) {
         const segment = segments[i];
         // If the current segment is an absolute path, replace the result
-        if (path.isAbsolute(segment) || segment.startsWith('/') || segment.startsWith('\\')) {
+        if (path.isAbsolute(segment) ||
+            segment.startsWith("/") ||
+            segment.startsWith("\\")) {
             result = segment;
         }
         else {
@@ -42,7 +44,7 @@ export function resolveFromFile(metaUrl, ...segments) {
  */
 export function isPathInDirectory(filePath, directory) {
     const relative = path.relative(directory, filePath);
-    return !relative.startsWith('..') && !path.isAbsolute(relative);
+    return !relative.startsWith("..") && !path.isAbsolute(relative);
 }
 /**
  * Safely reads a file with proper error handling
@@ -54,13 +56,13 @@ export async function safeReadFile(filePath, allowedDirectories = []) {
     const normalizedPath = path.normalize(filePath);
     // Security check: ensure the path is within allowed directories
     if (allowedDirectories.length > 0) {
-        const isAllowed = allowedDirectories.some(dir => isPathInDirectory(normalizedPath, dir));
+        const isAllowed = allowedDirectories.some((dir) => isPathInDirectory(normalizedPath, dir));
         if (!isAllowed) {
             throw new Error(`Access to ${normalizedPath} is not allowed`);
         }
     }
     try {
-        return await fs.readFile(normalizedPath, 'utf-8');
+        return await fs.readFile(normalizedPath, "utf-8");
     }
     catch (error) {
         if (error instanceof Error) {
@@ -75,6 +77,6 @@ export default {
     isPathInDirectory,
     safeReadFile,
     // Re-export path methods for convenience
-    ...path
+    ...path,
 };
 //# sourceMappingURL=pathUtils.js.map

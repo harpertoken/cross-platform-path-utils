@@ -1,4 +1,4 @@
-import * as path from 'path';
+import * as path from "path";
 /**
  * Creates a platform-agnostic path from path segments
  * @param segments Path segments to join

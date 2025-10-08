@@ -1,4 +1,4 @@
-import type { ProcessedFile } from '../types';
+import type { ProcessedFile } from "../types";
 /**
  * Example: Safely process imports in a file
  * This demonstrates:
