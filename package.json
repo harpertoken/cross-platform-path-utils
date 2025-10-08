@@ -1,5 +1,5 @@
 {
-  "name": "@bniladridas/cross-platform-path-utils",
+  "name": "@harpertoken/cross-platform-path-utils",
   "version": "0.1.0",
   "description": "TypeScript utilities for cross-platform path handling and secure file operations",
   "files": [
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bniladridas/cross-platform-path-utils.git"
+    "url": "https://github.com/harpertoken/cross-platform-path-utils.git"
   },
   "dependencies": {
     "@types/node": "^20.0.0"
