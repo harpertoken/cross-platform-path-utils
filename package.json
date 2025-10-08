@@ -1,7 +1,7 @@
 {
-  "name": "@bniladridas/cross-platform-guide",
+  "name": "@bniladridas/cross-platform-path-utils",
   "version": "0.1.0",
-  "description": "Cross-OS path normalization and import resolution utilities for CLI tools and static analysis",
+  "description": "TypeScript utilities for cross-platform path handling and secure file operations",
   "files": [
     "dist"
   ],
