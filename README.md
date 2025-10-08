@@ -1,5 +1,7 @@
 # cross-platform-path-utils
 
+<!-- Test CI -->
+
 Reliable path handling for Node.js, consistent across platforms.
 
 ## Install
