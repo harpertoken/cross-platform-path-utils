@@ -15,13 +15,13 @@ npm install cross-platform-path-utils
 ## Usage
 
 ```typescript
-import { createPath, safeReadFile } from 'cross-platform-path-utils';
+import { createPath, safeReadFile } from "cross-platform-path-utils";
 
 // Create paths
-const path = createPath('dir', 'file.txt');
+const path = createPath("dir", "file.txt");
 
 // Read files safely
-const data = await safeReadFile(path, ['/allowed']);
+const data = await safeReadFile(path, ["/allowed"]);
 ```
 
 ## API
@@ -60,6 +60,33 @@ npm test
    ```bash
    npm run build
    ```
+
+## Conventional Commits
+
+This project enforces [Conventional Commits](https://conventionalcommits.org/) standards.
+
+### Setup
+
+To enable the commit message hook:
+
+```bash
+cp scripts/commit-msg .git/hooks/commit-msg
+chmod +x .git/hooks/commit-msg
+```
+
+### Commit Message Rules
+
+- Start with a type: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`, `build`, `revert`
+- Followed by `: ` and description
+- First line lowercase, ≤60 characters
+
+Example: `feat: add new path utility function`
+
+### Rewriting History
+
+The `scripts/rewrite_msg.sh` script can clean up existing messages (lowercase + truncate).
+
+Use with `git filter-branch --msg-filter './scripts/rewrite_msg.sh' HEAD` for history cleanup.
 
 ## Documentation
 
