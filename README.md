@@ -11,7 +11,10 @@ npm install @bniladridas/cross-platform-path-utils
 ## Usage
 
 ```typescript
-import { createPath, safeReadFile } from "cross-platform-path-utils";
+import {
+  createPath,
+  safeReadFile,
+} from "@bniladridas/cross-platform-path-utils";
 
 // Create paths
 const path = createPath("dir", "file.txt");
