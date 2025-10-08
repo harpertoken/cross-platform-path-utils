@@ -11,7 +11,10 @@ npm install @harpertoken/cross-platform-path-utils
 ## Usage
 
 ```typescript
-import { createPath, safeReadFile } from "@harpertoken/cross-platform-path-utils";
+import {
+  createPath,
+  safeReadFile,
+} from "@harpertoken/cross-platform-path-utils";
 
 const path = createPath("dir", "file.txt");
 const data = await safeReadFile(path, ["/allowed"]);
