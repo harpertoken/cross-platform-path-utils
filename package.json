@@ -1,8 +1,10 @@
 {
   "name": "@bniladridas/cross-platform-guide",
-  "version": "1.1.0",
+  "version": "0.1.0",
   "description": "Cross-OS path normalization and import resolution utilities for CLI tools and static analysis",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "engines": {
     "node": ">=14.0.0"
   },
