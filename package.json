@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "TypeScript utilities for cross-platform path handling and secure file operations",
   "files": [
-    "dist"
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/types.js",
+    "dist/types.d.ts",
+    "dist/utils/"
   ],
   "engines": {
     "node": ">=14.0.0"
