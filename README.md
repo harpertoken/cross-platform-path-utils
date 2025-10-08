@@ -1,9 +1,5 @@
 # cross-platform-path-utils
 
-[![npm version](https://img.shields.io/npm/v/cross-platform-path-utils.svg)](https://www.npmjs.com/package/cross-platform-path-utils)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm downloads](https://img.shields.io/npm/dt/cross-platform-path-utils.svg)](https://www.npmjs.com/package/cross-platform-path-utils)
-
 Simple, reliable path handling for Node.js that works the same everywhere.
 
 ## Install
