@@ -5,7 +5,7 @@ Simple, reliable path handling for Node.js that works the same everywhere.
 ## Install
 
 ```bash
-npm install cross-platform-path-utils
+npm install @bniladridas/cross-platform-path-utils
 ```
 
 ## Usage
